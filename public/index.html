@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Click Cage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/styles.434540e1.css">
+  <script src="/styles.434540e1.js"></script></head>
+
+  <body>
+    <header>
+      <span class="game__title">DOTS GAME!</span>
+      <div class="timer">Timer:<span id="stopWatch">00:00</span></div>
+    </header>
+    <main role="main">
+      <div class="game__board"></div>
+    </main>
+    <footer>
+      <div class="game__score">
+        <span class="score__text"> Score:</span>
+        <span class="score" id="currentScore"></span>
+      </div>
+      <div class="mode__selection">
+        <label for="changeMode">Game Mode</label>
+        <select id="changeMode" name="changeMode">
+          <option value="normal" defaultSelected="">Normal</option>
+          <option value="competition">Competition</option>
+        </select>
+      </div>
+      <div class="control__button">
+        <button class="game__toggle btn" id="startBtn">Start</button>
+        <button class="reset__button btn" id="clearBtn">Reset</button>
+      </div>
+
+      <div class="game__slider">
+        <label class="slider-speed-text">Speed</label>
+        <div class="slider-handle">
+          <input name="speedControl" id="speedControl" type="range" min="10" max="100" value="50" step="10">
+          <h4 class="slider__speed" id="currentSpeed">50</h4>
+        </div>
+      </div>
+    </footer>
+    <div class="modal__overlay">
+      <div class="modal__content">
+        <div class="close__box">
+          <button class="close btn">X</button>
+        </div>
+        <h2>Hurrey, You've won the Game!!</h2>
+      </div>
+    </div>
+  </body>
+  <script src="/js.00a46daa.js"></script>
+</html>
